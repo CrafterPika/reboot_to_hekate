@@ -45,3 +45,9 @@ jobs:
         DEVKITPPC: /opt/devkitpro/devkitPPC
         WUT_ROOT: /opt/devkitpro/wut
       run: make
+      
+    - name: Upload output
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: buildroot
+        path: reboot_to_hekate.nro

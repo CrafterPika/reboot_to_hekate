@@ -71,11 +71,27 @@ int main(int argc, char **argv)
         }
     }
 
+int reboottoRCM(){
+    Result rc = splInitialize();
+
+    if (R_FAILED(rc)) 
+        return 1;
+
+    rc = splSetConfig((SplConfigItem) 65001, 1);
+
+    if (R_FAILED(rc)) 
+        return 2;
+    
+    return 3;
+}
+
+	printf("Reboot to Hekate v1.0.1 by CrafterPika\n");
     printf("Press [+] to exit\n");
 	printf("\n");
 	printf("\n");
 	printf("OPTIONS:\n");
 	printf("Press [X] to reboot to hekate\n");
+	printf("Press [Y] to reboot to RCM\n");
 
     // Main loop
     while(appletMainLoop())
@@ -88,6 +104,9 @@ int main(int argc, char **argv)
 
         if (can_reboot && kDown & KEY_X) {
             reboot_to_hekate();
+        }
+        if (can_reboot && kDown & KEY_Y) {
+            reboottoRCM();
         }
 
         if (kDown & KEY_PLUS)  { 

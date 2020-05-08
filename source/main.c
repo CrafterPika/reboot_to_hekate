@@ -85,11 +85,11 @@ int reboottoRCM(){
     return 3;
 }
 
-	printf("Reboot to Hekate v1.0.1 by CrafterPika\n");
-    	printf("Press [+] to exit\n");
+	printf("Reboot to Hekate v1.0.2 by CrafterPika\n");
 	printf("\n");
 	printf("\n");
 	printf("OPTIONS:\n");
+	printf("Press [+] to exit\n");
 	printf("Press [X] to reboot to hekate\n");
 	printf("Press [Y] to reboot to RCM\n");
 

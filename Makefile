@@ -38,7 +38,7 @@ INCLUDES	:=	include
 EXEFS_SRC	:=	exefs_src
 APP_TITLE	:=	Reboot to Hekate
 APP_AUTHOR	:=	CrafterPika, AtmosphereNX
-APP_VERSION	:=	1.0.1
+APP_VERSION	:=	1.0.2
 ICON 		:=	source/icon.jpg
 #ROMFS	:=	romfs
 

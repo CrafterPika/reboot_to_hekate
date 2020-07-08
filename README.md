@@ -1,4 +1,4 @@
 # reboot_to_hekate
- simple app reboots to hekate
+This is simple homebrew application for the Nintendo Switch to reboot into hekate.
 
-based on [Atmosphere's Code](https://github.com/Atmosphere-NX/Atmosphere/) you can find the [atmosphere licence](https://github.com/CrafterPika/reboot_to_hekate/blob/master/AMS_LICENCE) here
+This is based on [Atmosphere's Code](https://github.com/Atmosphere-NX/Atmosphere/) ([Licence for Atmosphere](https://github.com/CrafterPika/reboot_to_hekate/blob/master/AMS_LICENCE))

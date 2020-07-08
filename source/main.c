@@ -71,21 +71,22 @@ int main(int argc, char **argv)
         }
     }
 
-int reboottoRCM(){
-    Result rc = splInitialize();
+    int reboottoRCM(){
+        Result rc = splInitialize();
 
-    if (R_FAILED(rc)) 
-        return 1;
+        if (R_FAILED(rc)) 
+            return 1;
 
-    rc = splSetConfig((SplConfigItem) 65001, 1);
+        rc = splSetConfig((SplConfigItem) 65001, 1);
 
-    if (R_FAILED(rc)) 
-        return 2;
-    
-    return 3;
-}
+        if (R_FAILED(rc)) 
+            return 2;
+
+        return 3;
+    }
 
 	printf("Reboot to Hekate v1.0.2 by CrafterPika\n");
+	printf("(Special Thanks to Atmosphere developers)\n");
 	printf("\n");
 	printf("\n");
 	printf("OPTIONS:\n");
